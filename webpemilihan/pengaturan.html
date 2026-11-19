@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pengaturan — Pemilihan Digital Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="admin-body">
+    <aside class="sidebar">
+      <a class="brand" href="admin.html">
+        <img class="brand-mark" src="assets/logo-nyoblos.svg" alt="">
+        Pemilihan Digital
+      </a>
+
+      <div class="side-caption">MENU UTAMA</div>
+
+      <nav>
+        <a class="nav-link" href="admin.html"><span>▦</span>Dashboard</a>
+        <a class="nav-link" href="kandidat.html"><span>♙</span>Kandidat</a>
+        <a class="nav-link" href="pemilih.html"><span>♧</span>Pemilih</a>
+        <a class="nav-link" href="hasil.html"><span>▤</span>Hasil</a>
+        <a class="nav-link active" href="pengaturan.html"><span>⚙</span>Pengaturan</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="admin-mini">
+          <div class="avatar">A</div>
+          <div>
+            <b>Administrator</b>
+            <small>Panel Admin</small>
+          </div>
+        </div>
+        <button class="btn btn-logout" id="logout-button">Keluar</button>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-top">
+        <div>
+          <span class="eyebrow">ADMINISTRATOR</span>
+          <h1>Pengaturan pemilihan</h1>
+        </div>
+        <a class="btn btn-secondary" href="index.html">Lihat website</a>
+      </header>
+
+      <section class="admin-content">
+        <div class="content-card">
+          <h3>Informasi pemilihan</h3>
+          <form id="settings-form" class="form-stack">
+            <label>Nama pemilihan</label>
+            <input id="election-name" placeholder="Pemilihan Ketua dan Wakil Ketua">
+            <label>Tanggal mulai</label>
+            <input id="start-date" type="datetime-local">
+            <label>Tanggal berakhir</label>
+            <input id="end-date" type="datetime-local">
+            <label class="inline-check">
+              <input id="election-active" type="checkbox">
+              Pemilihan dibuka
+            </label>
+            <button class="btn btn-primary" type="submit">Simpan pengaturan</button>
+            <p class="form-note" id="settings-message"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="js/admin-page.js"></script>
+  </body>
+</html>

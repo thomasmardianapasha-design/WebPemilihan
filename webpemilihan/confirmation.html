@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Konfirmasi Pilihan — Pemilihan Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="auth-page">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo-nyoblos.svg" alt="">
+        Pemilihan Digital
+      </a>
+      <a class="text-link" href="index.html">Kembali ke beranda</a>
+    </header>
+
+    <main class="auth-wrap">
+      <section class="auth-card">
+        <span class="eyebrow">AREA PEMILIH</span>
+        <h1>Periksa kembali pilihanmu</h1>
+        <p class="muted">Pastikan pasangan kandidat yang dipilih sudah benar.</p>
+
+        <div class="summary-card">
+          <span class="eyebrow">PILIHAN SEMENTARA</span>
+          <h2 id="chosen-candidate">Belum ada pilihan</h2>
+          <p>Setelah dikirim, pilihan tidak dapat diubah.</p>
+        </div>
+
+        <button class="btn btn-primary full" id="submit-vote" type="button">
+          Konfirmasi pilihan 
+        </button>
+        <p class="form-note" id="confirm-message">
+          Pengiriman suara dinonaktifkan sampai backend voting aman dikonfigurasi.
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="js/voter-flow.js"></script>
+  </body>
+</html>

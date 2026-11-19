@@ -1,0 +1,1 @@
+// Modul CRUD admin akan diaktifkan setelah skema Firestore dan Cloud Functions disiapkan.

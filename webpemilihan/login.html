@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Pemilih — Pemilihan Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="auth-page">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo-nyoblos.svg" alt="">
+        Pemilihan Digital
+      </a>
+      <a class="text-link" href="index.html">Kembali ke beranda</a>
+    </header>
+
+    <main class="auth-wrap">
+      <section class="auth-card">
+        <span class="eyebrow">AREA PEMILIH</span>
+        <h1>Masuk sebagai pemilih</h1>
+        <p class="muted">
+          Masukkan NTA dan password akun untuk memulai pemilihan.
+        </p>
+
+        <form id="nta-form" class="form-stack">
+          <label for="nta">Nomor Tanda Anggota (NTA)</label>
+          <input
+            id="nta"
+            type="text"
+            required
+            placeholder="Masukkan nomor NTA"
+            autocomplete="username"
+          >
+
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            required
+            placeholder="Masukkan password"
+            autocomplete="current-password"
+          >
+
+          <button class="btn btn-primary full" type="submit">
+            Masuk
+          </button>
+
+          <p class="form-note" id="form-message"></p>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="js/voter-flow.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+// Placeholder. Ballot harus dibuat melalui Cloud Function dengan transaksi/validasi server.

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manajemen Kandidat — Pemilihan Digital Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="admin-body">
+    <aside class="sidebar">
+      <a class="brand" href="admin.html">
+        <img class="brand-mark" src="assets/logo-nyoblos.svg" alt="">
+        Pemilihan Digital
+      </a>
+
+      <div class="side-caption">MENU UTAMA</div>
+
+      <nav>
+        <a class="nav-link" href="admin.html"><span>▦</span>Dashboard</a>
+        <a class="nav-link active" href="kandidat.html"><span>♙</span>Kandidat</a>
+        <a class="nav-link" href="pemilih.html"><span>♧</span>Pemilih</a>
+        <a class="nav-link" href="hasil.html"><span>▤</span>Hasil</a>
+        <a class="nav-link" href="pengaturan.html"><span>⚙</span>Pengaturan</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="admin-mini">
+          <div class="avatar">A</div>
+          <div>
+            <b>Administrator</b>
+            <small>Panel Admin</small>
+          </div>
+        </div>
+        <button class="btn btn-logout" id="logout-button">Keluar</button>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-top">
+        <div>
+          <span class="eyebrow">ADMINISTRATOR</span>
+          <h1>Manajemen kandidat</h1>
+        </div>
+        <a class="btn btn-secondary" href="index.html">Lihat website</a>
+      </header>
+
+      <section class="admin-content">
+        <div class="content-card">
+          <h3>Tambah kandidat</h3>
+          <form id="candidate-form" class="form-grid">
+            <input id="candidate-number" placeholder="Nomor urut" required>
+            <input id="candidate-name" placeholder="Nama pasangan" required>
+            <input id="candidate-chair" placeholder="Nama calon ketua" required>
+            <input id="candidate-deputy" placeholder="Nama calon wakil" required>
+            <textarea id="candidate-vision" placeholder="Visi dan misi" rows="3"></textarea>
+            <button class="btn btn-primary" type="submit">Simpan kandidat</button>
+          </form>
+        </div>
+
+        <div class="content-card">
+          <h3>Daftar kandidat</h3>
+          <div id="candidate-list" class="table-wrap">
+            Data kandidat akan dimuat dari Firestore.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="js/admin-page.js"></script>
+  </body>
+</html>
